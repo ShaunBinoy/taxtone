@@ -1,0 +1,142 @@
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import Blob from "../../assets/blob.svg";
+import HeroPng from "../../assets/working.png";
+import Book from "../../assets/book_pen.png";
+import Bulb from "../../assets/light-bulb.png";
+import Cloud from "../../assets/set-clouds.png";
+import Star from "../../assets/stars.png";
+
+import { animate, motion } from "framer-motion";
+
+export const FadeUp = (delay) => {
+  return {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        duration: 0.5,
+        delay: delay,
+        ease: "easeInOut",
+      },
+    },
+  };
+};
+
+const Hero = () => {
+  return (
+    <section className="bg-blue-300 overflow-hidden relative">
+      <motion.img
+        src={Star}
+        alt="Star"
+        className="absolute w-full h-auto" // Full width with auto height to maintain aspect ratio
+        animate={{ x: [0, 15, 0], y: [0, -15, 0] }}
+        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+      />
+      <Navbar />
+      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
+        {/* Brand Info */}
+        <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
+          <div className="text-center md:text-left space-y-10 lg:max-w-[400px]">
+            <motion.h1
+              variants={FadeUp(0.6)}
+              initial="initial"
+              animate="animate"
+              className="text-3xl lg:text-7xl font-bold !leading-snug"
+            >
+              TAX
+              <span className="text-blue-700">TONE</span>
+            </motion.h1>
+            <motion.h1
+              variants={FadeUp(0.6)}
+              initial="initial"
+              animate="animate"
+              className="text-3xl lg:text-5xl font-bold !leading-snug"
+            >
+              Let's Learn to build a{" "}
+              <span className="text-secondary">Website</span> for your business
+            </motion.h1>
+            <motion.div
+              variants={FadeUp(0.8)}
+              initial="initial"
+              animate="animate"
+              className="flex justify-center md:justify-start"
+            >
+              <button className="primary-btn flex items-center gap-2 group">
+                Get Started
+                <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
+              </button>
+            </motion.div>
+          </div>
+        </div>
+        {/* Hero Image */}
+        <div className="flex justify-center items-center -mt-16">
+          <motion.img
+            src={Bulb}
+            alt="Bulb"
+            className="absolute top-48 left-12 w-16 h-16 sm:w-20 sm:h-20 md:top-40 md:left-40"
+            animate={{ y: [0, 25, 0] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          />
+          <motion.img
+            src={Cloud}
+            alt="Cloud"
+            className="absolute top-20 left-56 w-20 h-20 sm:w-28 sm:h-28 z-[2] md:top-24 md:left-96"
+            // initial={{ x: 50, opacity: 0 }}
+            animate={{ x: [0, 20, 0], opacity: 1 }}
+            transition={{
+              repeat: Infinity,
+              duration: 4,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+          />
+          <motion.img
+            src={Cloud}
+            alt="Cloud"
+            className="absolute top-16 left-12 w-20 h-20 sm:w-28 sm:h-28 z-[2] md:top-16 md:left-12"
+            animate={{ x: [0, -20, 0], opacity: 1 }}
+            transition={{
+              repeat: Infinity,
+              duration: 4,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+          />
+          <motion.img
+            src={Book}
+            alt="Book"
+            className="absolute top-2/4 left-10 w-16 h-16 sm:w-20 sm:h-20 md:top-1/2 md:left-3.5"
+            animate={{ x: [0, 15, 0], y: [0, -15, 0] }}
+            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+          />
+          <motion.img
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
+            src={HeroPng}
+            alt=""
+            className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
+          />
+          <motion.img
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
+            src={Blob}
+            alt=""
+            className="absolute -bottom-32 w-[800px] md:w-[1500px] z-[1] hidden md:block"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
