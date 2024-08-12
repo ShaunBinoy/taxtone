@@ -36,20 +36,20 @@ const ServicesData = [
     icon: <IoMdHappy />,
     delay: 0.5,
   },
-  {
-    id: 5,
-    title: "SEO optimization",
-    link: "#",
-    icon: <IoPulseOutline />,
-    delay: 0.6,
-  },
-  {
-    id: 6,
-    title: "24/7 support",
-    link: "#",
-    icon: <BiSupport />,
-    delay: 0.7,
-  },
+  // {
+  //   id: 5,
+  //   title: "SEO optimization",
+  //   link: "#",
+  //   icon: <IoPulseOutline />,
+  //   delay: 0.6,
+  // },
+  // {
+  //   id: 6,
+  //   title: "24/7 support",
+  //   link: "#",
+  //   icon: <BiSupport />,
+  //   delay: 0.7,
+  // },
 ];
 
 const SlideLeft = (delay) => {
@@ -76,7 +76,7 @@ const Services = () => {
         <h1 className="text-4xl font-bold text-left pb-10">
           Services we provide
         </h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {ServicesData.map((service) => (
             <motion.div
               variants={SlideLeft(service.delay)}
