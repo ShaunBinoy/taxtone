@@ -57,12 +57,12 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="relative container mx-auto px-4">
+    <div className="relative container mx-auto px-4 ">
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="px-4" // Add padding to the item wrapper
+            className="px-4 " // Add padding to the item wrapper
           >
             <div className="p-4 bg-green-200 shadow-lg rounded-lg flex items-start">
               <img
@@ -73,7 +73,7 @@ const TestimonialCarousel = () => {
               <div>
                 <p className="font-bold text-lg">{testimonial.name}</p>
                 <p className="text-gray-500 mb-2">{testimonial.designation}</p>
-                <p className="italic">"{testimonial.review}"</p>
+                <p className="italic line-clamp-6">"{testimonial.review}"</p>
               </div>
             </div>
           </div>

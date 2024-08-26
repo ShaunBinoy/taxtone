@@ -39,7 +39,7 @@ const Navbar = () => {
       >
         {/* Logo section */}
         <div>
-          <h1 className="font-bold text-2xl">The Coding Journey</h1>
+          <h1 className="font-bold text-2xl">TAX TONE</h1>
         </div>
         {/* Menu section */}
         <div className="hidden lg:block">

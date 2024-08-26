@@ -43,7 +43,7 @@ const Banner = () => {
                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
               >
                 <FaBookReader className="text-2xl" />
-                <p className="text-lg">10,000+ Courses</p>
+                <p className="text-lg">10+ Courses</p>
               </motion.div>
               <motion.div
                 variants={FadeUp(0.4)}
@@ -63,7 +63,7 @@ const Banner = () => {
                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
               >
                 <MdOutlineAccessTime className="text-2xl" />
-                <p className="text-lg">Lifetime Access</p>
+                <p className="text-lg">Flexible Timing</p>
               </motion.div>
             </div>
           </div>

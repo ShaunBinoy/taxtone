@@ -1,48 +1,48 @@
 import React from "react";
-import { RiComputerLine } from "react-icons/ri";
-import { CiMobile3 } from "react-icons/ci";
-import { TbWorldWww } from "react-icons/tb";
-import { IoMdHappy } from "react-icons/io";
+import { FaMoneyBillWave } from "react-icons/fa";
+import { AiFillFileText } from "react-icons/ai";
+import { SiMicrosoftexcel } from "react-icons/si";
+import { RiAccountPinBoxLine } from "react-icons/ri";
 import { BiSupport } from "react-icons/bi";
-import { IoPulseOutline } from "react-icons/io5";
+import { FaBalanceScale } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const ServicesData = [
   {
     id: 1,
-    title: "Web Development",
+    title: "GST",
     link: "#",
-    icon: <TbWorldWww />,
+    icon: <FaBalanceScale />,
     delay: 0.2,
   },
   {
     id: 2,
-    title: "Mobile development",
+    title: "Tally",
     link: "#",
-    icon: <CiMobile3 />,
+    icon: <RiAccountPinBoxLine />,
     delay: 0.3,
   },
   {
     id: 3,
-    title: "Software development",
+    title: "Excel",
     link: "#",
-    icon: <RiComputerLine />,
+    icon: <SiMicrosoftexcel />,
     delay: 0.4,
   },
   {
     id: 4,
-    title: "Satisfied clients",
+    title: "TDS",
     link: "#",
-    icon: <IoMdHappy />,
+    icon: <AiFillFileText />,
     delay: 0.5,
   },
-  // {
-  //   id: 5,
-  //   title: "SEO optimization",
-  //   link: "#",
-  //   icon: <IoPulseOutline />,
-  //   delay: 0.6,
-  // },
+  {
+    id: 5,
+    title: "Income Tax",
+    link: "#",
+    icon: <FaMoneyBillWave />,
+    delay: 0.6,
+  },
   // {
   //   id: 6,
   //   title: "24/7 support",
@@ -73,10 +73,14 @@ const Services = () => {
   return (
     <section className="bg-white">
       <div className="container pb-14 pt-16">
-        <h1 className="text-4xl font-bold text-left pb-10">
-          Services we provide
+        <h1 className="text-4xl font-bold text-center pb-2">
+          Courses We Provide
         </h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <p className="text-center pb-10 font-semibold text-slate-500">
+          Enroll in 3-Month Offline Programs at Our Centers <br /> for Hands-On
+          Learning and Skill Development.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
           {ServicesData.map((service) => (
             <motion.div
               variants={SlideLeft(service.delay)}

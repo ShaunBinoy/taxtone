@@ -28,41 +28,41 @@ const Services2 = () => {
   const slides = [
     {
       img: DemoImage,
-      title: "Demo 1",
-      description: "This is a demo slide",
+      title: "Challanges ",
+      description: "Based Training",
     },
     {
       img: DemoImage,
-      title: "Demo 2",
-      description: "This is another demo slide",
+      title: "Malayalam",
+      description: "Classes",
     },
     {
       img: DemoImage,
-      title: "Demo 3",
-      description: "This is yet another demo slide",
+      title: "One to One ",
+      description: "Personal Mentors",
     },
     {
       img: DemoImage,
-      title: "Demo 4",
-      description: "This is the final demo slide",
+      title: "Flexible ",
+      description: "Time Scheduling",
     },
   ];
 
   return (
     <section>
-      <div className="container bg-white py-12">
+      <div className="container bg-white py-4">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="px-4">
-              <div className=" bg-green-100 p-6 rounded-lg shadow-md flex flex-row items-center">
+              <div className=" bg-blue-100 p-6 rounded-2xl shadow-md flex flex-row items-center">
                 <img
                   src={slide.img}
                   alt={slide.title}
                   className="w-16 h-16 mr-4 md:w-44 md:h-44"
                 />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">{slide.title}</h3>
-                  <p>{slide.description}</p>
+                  <h3 className="text-3xl md:text-5xl  font-bold text-blue-500">{slide.title}</h3>
+                  <p className="text-xl md:text-2xl font-semibold text-gray-600">{slide.description}</p>
                 </div>
               </div>
             </div>
