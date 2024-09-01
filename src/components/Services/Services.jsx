@@ -71,10 +71,10 @@ const SlideLeft = (delay) => {
 };
 const Services = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white mt-4">
       <div className="container pb-14 pt-16">
-        <h1 className="text-4xl font-bold text-center pb-2">
-          Courses We Provide
+        <h1 className="text-4xl md:text-5xl font-bold text-center pb-4">
+          Services We Provide
         </h1>
         <p className="text-center pb-10 font-semibold text-slate-500">
           Enroll in 3-Month Offline Programs at Our Centers <br /> for Hands-On

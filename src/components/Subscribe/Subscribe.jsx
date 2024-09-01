@@ -64,7 +64,7 @@ const TestimonialCarousel = () => {
             key={index}
             className="px-4 " // Add padding to the item wrapper
           >
-            <div className="p-4 bg-green-200 shadow-lg rounded-lg flex items-start">
+            <div className="p-4 bg-blue-100 shadow-lg rounded-lg flex items-start">
               <img
                 src={DemoImage}
                 alt="Demo"

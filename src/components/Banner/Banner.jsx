@@ -1,5 +1,5 @@
 import React from "react";
-import BannerPng from "../../assets/education.png";
+import BannerPng from "../../assets/no1.png";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { FaBookReader } from "react-icons/fa";
@@ -19,7 +19,7 @@ const Banner = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             src={BannerPng}
             alt=""
-            className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+            className="w-[350px] md:w-[420px] object-cover drop-shadow"
           />
         </div>
         {/* Banner Text */}

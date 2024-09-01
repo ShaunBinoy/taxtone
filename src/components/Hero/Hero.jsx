@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Blob from "../../assets/blob.svg";
-import HeroPng from "../../assets/working.png";
+import HeroPng from "../../assets/working2.png";
 import Book from "../../assets/352.png";
 import Bulb from "../../assets/Light Bulb.png";
 import Cloud from "../../assets/set-clouds.png";
@@ -57,7 +57,7 @@ const Hero = () => {
               variants={FadeUp(0.6)}
               initial="initial"
               animate="animate"
-              className="text-3xl lg:text-7xl font-bold !leading-snug"
+              className="text-3xl lg:text-7xl font-bold !leading-snug text-gray-100"
             >
               UpSkill
               <span className="text-blue-700">Now</span>
@@ -66,11 +66,10 @@ const Hero = () => {
               variants={FadeUp(0.6)}
               initial="initial"
               animate="animate"
-              className="text-xl lg:text-3xl font-bold !leading-snug"
+              className="text-xl lg:text-3xl font-bold !leading-snug text-gray-100"
             >
-              Let's Learn <span className="text-blue-700">Accounting</span>{" "}
-              with love and precision. It’s easy when taught with care and
-              expertise.
+              Let's Learn <span className="text-blue-700">Accounting</span> with
+              love and precision. It’s easy when taught with care and expertise.
             </motion.h1>
             <motion.div
               variants={FadeUp(0.8)}

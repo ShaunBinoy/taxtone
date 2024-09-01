@@ -1,6 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import DemoImage from "../../assets/hero.png"; // Use the image you uploaded
+import time from "../../assets/carousel/time.svg";
+import malayalam from "../../assets/carousel/malayalam.svg";
+import one from "../../assets/carousel/one.png";
+import challenge from "../../assets/carousel/challenge.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -27,22 +30,22 @@ const Services2 = () => {
 
   const slides = [
     {
-      img: DemoImage,
+      img: challenge,
       title: "Challanges ",
       description: "Based Training",
     },
     {
-      img: DemoImage,
+      img: malayalam,
       title: "Malayalam",
       description: "Classes",
     },
     {
-      img: DemoImage,
+      img: one,
       title: "One to One ",
       description: "Personal Mentors",
     },
     {
-      img: DemoImage,
+      img: time,
       title: "Flexible ",
       description: "Time Scheduling",
     },

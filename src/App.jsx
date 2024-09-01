@@ -12,9 +12,9 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white text-dark">
       <Hero />
-      <Services />
-      <Services2 />
       <TrendingPrograms />
+      <Services2 />
+      <Services />
       <Banner />
       <Subscribe />
       <Banner2 />
