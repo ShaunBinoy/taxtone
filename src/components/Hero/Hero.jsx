@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Blob from "../../assets/blob.svg";
-import HeroPng from "../../assets/working2.png";
+import HeroPng from "../../assets/working.png";
 import Book from "../../assets/352.png";
 import Bulb from "../../assets/Light Bulb.png";
 import Cloud from "../../assets/set-clouds.png";
@@ -143,7 +143,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
             src={HeroPng}
             alt=""
-            className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
+            className="w-[350px] xl:w-[600px] relative z-10 mt-4"
           />
           <motion.img
             initial={{ x: -50, opacity: 0 }}
