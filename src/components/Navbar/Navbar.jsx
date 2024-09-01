@@ -31,11 +31,13 @@ const NavbarMenu = [
 ];
 const Navbar = () => {
   return (
-    <nav className="relative z-20">
+    <nav className="sticky top-0 left-0 w-full z-50 bg-white">
+      {" "}
+      {/* Ensure z-index is higher */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        className="container py-10 flex justify-between items-center"
+        className="container py-4 flex justify-between items-center"
       >
         {/* Logo section */}
         <div>

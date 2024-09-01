@@ -23,6 +23,18 @@ export default {
           "2xl": "6rem",
         },
       },
+      keyframes: {
+        textclip: {
+          "0%": { "background-position": "200% 200%" },
+          "100%": { "background-position": "0% 0%" },
+        },
+      },
+      animation: {
+        textclip: "textclip 7s linear infinite",
+      },
+      backgroundSize: {
+        "400%": "400%",
+      },
     },
   },
   plugins: [],

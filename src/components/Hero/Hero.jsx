@@ -33,7 +33,7 @@ export const FadeUp = (delay) => {
 
 const Hero = () => {
   return (
-    <section className="bg-blue-300 overflow-hidden relative">
+    <section className="bg-blue-200 overflow-hidden relative">
       <motion.img
         src={Star}
         alt="Star"
@@ -49,27 +49,38 @@ const Hero = () => {
         transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
       />
       <Navbar />
-      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
+      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] mt-9">
         {/* Brand Info */}
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
-          <div className="text-center md:text-left space-y-10 lg:max-w-[400px]">
+          <div className="text-center md:text-left space-y-5 lg:max-w-[400px]">
             <motion.h1
               variants={FadeUp(0.6)}
               initial="initial"
               animate="animate"
-              className="text-3xl lg:text-7xl font-bold !leading-snug text-gray-100"
+              className="text-6xl lg:text-7xl font-bold !leading-snug text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-blue-800 to-gray-800 bg-[length:400%_400%] animate-textclip"
             >
               UpSkill
-              <span className="text-blue-700">Now</span>
+              <span className="text-6xl lg:text-7xl font-bold !leading-snug text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-gray-900 to-blue-700 bg-[length:200%_100%] animate-textclip">
+                Now
+              </span>
+            </motion.h1>
+
+            <motion.h1
+              variants={FadeUp(0.6)}
+              initial="initial"
+              animate="animate"
+              className="text-xl lg:text-2xl font-bold !leading-snug text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-gray-900 to-blue-700 bg-[length:200%_100%] animate-textclip"
+            >
+              Leading Accounting <br />
+              Virtual Internship Platform
             </motion.h1>
             <motion.h1
               variants={FadeUp(0.6)}
               initial="initial"
               animate="animate"
-              className="text-xl lg:text-3xl font-bold !leading-snug text-gray-100"
+              className="text-xl lg:text-2xl font-semibold !leading-snug text-gray-700"
             >
-              Let's Learn <span className="text-blue-700">Accounting</span> with
-              love and precision. It’s easy when taught with care and expertise.
+              It's easy when taught <br /> with care and expertise.
             </motion.h1>
             <motion.div
               variants={FadeUp(0.8)}
@@ -89,7 +100,7 @@ const Hero = () => {
           <motion.img
             src={Bulb}
             alt="Bulb"
-            className="absolute top-48 left-12 w-9 h-12 sm:w-9 sm:h-12 md:top-40 md:left-40"
+            className="absolute top-60 left-12 w-9 h-12 sm:w-9 sm:h-12 md:top-40 md:left-40"
             animate={{ y: [0, 25, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           />
