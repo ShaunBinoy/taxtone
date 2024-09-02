@@ -8,6 +8,7 @@ import Banner2 from "./components/Banner/Banner2";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import Form from "./components/Form/Form";
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
         <section id="reviews">
           <Subscribe />
           <Banner2 />
+        </section>
+        <section id="contact">
+          <Form />
         </section>
       </main>
       <Footer />

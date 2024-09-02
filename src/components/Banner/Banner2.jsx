@@ -17,10 +17,11 @@ const Banner2 = () => {
               Join Our Community to Start your Journey
             </h1>
             <p className="text-dark2">
-            Join Taxtone Community, the Best Tax Practicing Institute, and Start Your Learning Adventure Today!
+              Join Taxtone Community, the Best Tax Practicing Institute, and
+              Start Your Learning Adventure Today!
             </p>
             <a
-              href="https://chat.whatsapp.com/FQSKgJ5f1eIAhlyF5sVym0"
+              href="https://chat.whatsapp.com/EP5n23djpJZHHKaiPVCYod"
               className="primary-btn !mt-8"
             >
               Join Now

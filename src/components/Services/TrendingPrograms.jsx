@@ -4,34 +4,35 @@ import img2 from "../../assets/courses/2.png";
 import img3 from "../../assets/courses/3.png";
 import img4 from "../../assets/courses/4.png";
 import { motion } from "framer-motion";
+import { FiClock } from "react-icons/fi";
 
 const TrendingPrograms = () => {
   const programs = [
     {
       title: "ACCOUNTING MASTERY",
-      sub: "Dur : 2 Months",
-      medium: "Med : Offline",
+      sub: "2 Months",
+      medium: "Online",
       img: img1,
       des: "Focused on GST, Excel, Tally, TDS, and Income Tax.",
     },
     {
       title: "EXCEL ESSENTIALS",
-      sub: "Dur : 1 Month",
-      medium: "Med : Offline",
+      sub: "1 Month",
+      medium: "Online",
       img: img2,
       des: "Comprehensive Excel training.",
     },
     {
       title: "GST ESSENTIALS",
-      sub: "Dur : 1 Month",
-      medium: "Med : Online",
+      sub: "1 Month",
+      medium: "Online",
       img: img3,
       des: "In-depth GST knowledge and application.",
     },
     {
       title: "GST MASTERCLASS",
-      sub: "Dur : 1 Month",
-      medium: "Med : Offline",
+      sub: "1 Month",
+      medium: "Offline",
       img: img4,
       des: "Offline 1 Month GST Practicals in our Centers",
     },
@@ -83,10 +84,12 @@ const TrendingPrograms = () => {
               <h2 className="text-md md:text-lg font-bold text-center text-blue-500 pt-2">
                 {program.title}
               </h2>
-              <p className="text-xs md:text-md font-semibold text-left text-gray-500">
+              <p className="text-xs md:text-lg font-semibold text-left text-gray-500 flex items-center">
+                <FiClock className="mr-2" />
                 {program.sub}
               </p>
-              <p className="text-xs md:text-md font-semibold text-right text-gray-500 pb-6">
+
+              <p className="text-xs md:text-sm font-semibold text-right text-gray-500 pb-6">
                 {program.medium}
               </p>
               <div className="absolute inset-0 bg-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 flex flex-col items-center justify-center">

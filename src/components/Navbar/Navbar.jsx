@@ -30,6 +30,11 @@ const NavbarMenu = [
     title: "Reviews",
     to: "reviews",
   },
+  {
+    id: 6,
+    title: "Contact",
+    to: "contact",
+  },
 ];
 
 const Navbar = () => {

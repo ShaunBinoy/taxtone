@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 import { motion } from "framer-motion";
 
@@ -66,7 +66,7 @@ const Footer = () => {
           {/* third section */}
           <div className="space-y-4 max-w-[300px]">
             <h1 className="text-2xl font-bold">Get In Touch</h1>
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <input
                 type="text"
                 placeholder="Enter your email"
@@ -75,20 +75,20 @@ const Footer = () => {
               <button className="bg-primary text-white font-semibold py-4 px-6 rounded-e-xl">
                 Go
               </button>
-            </div>
+            </div> */}
             {/* social icons */}
             <div className="flex space-x-6 py-3">
-              <a href="https://chat.whatsapp.com/FQSKgJ5f1eIAhlyF5sVym0">
-                <FaWhatsapp className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+              <a href="https://chat.whatsapp.com/EP5n23djpJZHHKaiPVCYod">
+                <FaWhatsapp className="cursor-pointer hover:text-blue-700 hover:scale-150 duration-500" />
               </a>
-              <a href="https://www.instagram.com/the.coding.journey/">
-                <FaInstagram className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+              <a href="https://www.instagram.com/tax_tone_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <FaInstagram className="cursor-pointer hover:text-blue-700 hover:scale-150 duration-500" />
               </a>
-              <a href="https://thecodingjourney.com/">
-                <TbWorldWww className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+              <a href="https://www.facebook.com/profile.php?id=61555438953621">
+                <FaFacebook className="cursor-pointer hover:text-blue-700 hover:scale-150 duration-500" />
               </a>
-              <a href="https://www.youtube.com/@TheCodingJourney">
-                <FaYoutube className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+              <a href="https://www.youtube.com/">
+                <FaYoutube className="cursor-pointer hover:text-blue-700 hover:scale-150 duration-500" />
               </a>
             </div>
           </div>

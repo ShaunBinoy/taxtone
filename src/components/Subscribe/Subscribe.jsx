@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     img: r3,
-    name: "Sruthy",
+    name: "Sreya",
     designation: "GST Masterclass",
     review:
       "I completed the Offline 1 Month GST Practicals at Taxtone, and it was a great experience! The hands-on training really helped me understand GST better. If you want to learn GST with real-life practice, Taxtone is the best tax practicing institute. The trainers are very supportive, and the environment is perfect for learning. I highly recommend Taxtone for GST training!",
