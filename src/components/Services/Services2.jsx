@@ -57,7 +57,7 @@ const Services2 = () => {
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="px-4">
-              <div className=" bg-blue-100 p-6 rounded-2xl shadow-md flex flex-row items-center">
+              <div className=" bg-blue-100 p-6 rounded-2xl shadow-md flex flex-row items-center mb-4">
                 <img
                   src={slide.img}
                   alt={slide.title}

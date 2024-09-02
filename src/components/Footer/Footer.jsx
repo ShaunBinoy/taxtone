@@ -14,12 +14,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           {/* first section */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">The Coding Journey</h1>
+            <h1 className="text-2xl font-bold">TAXTONE</h1>
             <p className="text-dark2">
-              TCJ is a platform dedicated to empowering aspiring developers.
-              From beginner tutorials to advanced programming concepts, we
-              provide a comprehensive learning experience designed to help you
-              master coding skills, build projects, and launch your tech career.
+              Founded in 2023, Taxtone specializes in teaching tax and
+              accounting subjects. We offer clear, practical training to help
+              you master financial topics. Our expert team is here to make
+              complex tax and accounting concepts easy to understand.
             </p>
           </div>
           {/* second section */}
@@ -29,16 +29,16 @@ const Footer = () => {
               <div className="text-dark2">
                 <ul className="space-y-2 text-lg">
                   <li className="cursor-pointer hover:text-secondary duration-200">
-                    Web Development
+                    Accounting Mastery
                   </li>
                   <li className="cursor-pointer hover:text-secondary duration-200">
-                    Software Development
+                    Excel Essentials
                   </li>
                   <li className="cursor-pointer hover:text-secondary duration-200">
-                    Apps Development
+                    GST Essentials
                   </li>
                   <li className="cursor-pointer hover:text-secondary duration-200">
-                    E-learning
+                    GST Masterclass
                   </li>
                 </ul>
               </div>

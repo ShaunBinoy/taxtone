@@ -1,45 +1,54 @@
 import React from "react";
 import Slider from "react-slick";
-import DemoImage from "../../assets/hero.png";
+import r1 from "../../assets/review/1.png";
+import r2 from "../../assets/review/2.png";
+import r3 from "../../assets/review/3.png";
+import r4 from "../../assets/review/4.png";
+import r5 from "../../assets/review/5.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
-    name: "John Doe",
-    designation: "CEO at Company",
+    img: r1,
+    name: "Kiran",
+    designation: "Accounting Mastery",
     review:
-      "“This service is fantastic! The team was very professional and exceeded our expectations.”",
+      "Taxtone offers courses on GST, Excel, Tally, TDS, and Income Tax, all in one place. The training is practical, helping me apply what I learned directly to my work. Taxtone is the best tax practicing institute for anyone who wants to get better at tax work. Their courses cover everything you need to know about these topics.",
   },
   {
-    name: "Jane Smith",
-    designation: "CTO at Tech Corp",
+    img: r2,
+    name: "Akhil",
+    designation: "GST Essentials",
     review:
-      "“Highly recommend! They delivered top-notch quality and were incredibly responsive throughout the process.”",
+      "Taxtone gave me deep knowledge about GST that I can now apply in my job. The teachers explain everything clearly, making GST easy to understand. If you want to really learn GST, Taxtone is the best tax practicing institute to go to. Their GST course is thorough and practical, helping you gain confidence in GST.",
   },
   {
-    name: "Emily Johnson",
-    designation: "Marketing Director",
+    img: r3,
+    name: "Sruthy",
+    designation: "GST Masterclass",
     review:
-      "“An exceptional experience! The attention to detail and creativity shown was truly impressive.”",
+      "I completed the Offline 1 Month GST Practicals at Taxtone, and it was a great experience! The hands-on training really helped me understand GST better. If you want to learn GST with real-life practice, Taxtone is the best tax practicing institute. The trainers are very supportive, and the environment is perfect for learning. I highly recommend Taxtone for GST training!",
   },
   {
-    name: "Michael Brown",
-    designation: "Product Manager",
+    img: r4,
+    name: "Pavi",
+    designation: "Excel Essentials",
     review:
-      "“Great work! The team managed to capture our vision perfectly and delivered results ahead of schedule.”",
+      "Taxtone’s Excel training was exactly what I needed. The course covered everything, from basics to advanced Excel skills, all focused on tax work. Now, I can handle Excel with confidence. If you want to improve your Excel skills, Taxtone is the best tax practicing institute for you. Their Excel course is practical and easy to follow.",
   },
   {
-    name: "Sarah Davis",
-    designation: "Creative Director",
+    img: r5,
+    name: "Anjana",
+    designation: "GST Essentials",
     review:
-      "“Excellent service with a keen eye for design. We were thrilled with the final product and the smooth process. Great work! The team managed to capture our vision perfectly and delivered results ahead of schedule.”",
+      "Taxtone offers clear and detailed GST training, making it easy to understand even the tough parts. I now feel more confident using GST in my work. If you want practical and easy-to-follow GST lessons, Taxtone is the best tax practicing institute. Their teaching really helped me improve my skills.",
   },
 ];
 
 const TestimonialCarousel = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -66,14 +75,14 @@ const TestimonialCarousel = () => {
           >
             <div className="p-4 bg-blue-100 shadow-lg rounded-lg flex items-start">
               <img
-                src={DemoImage}
+                src={testimonial.img}
                 alt="Demo"
                 className="w-16 h-16 rounded-full mr-4"
               />
               <div>
                 <p className="font-bold text-lg">{testimonial.name}</p>
                 <p className="text-gray-500 mb-2">{testimonial.designation}</p>
-                <p className="italic line-clamp-6">"{testimonial.review}"</p>
+                <p className="italic line-clamp-none">"{testimonial.review}"</p>
               </div>
             </div>
           </div>

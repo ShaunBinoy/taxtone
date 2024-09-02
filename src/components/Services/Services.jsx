@@ -3,6 +3,7 @@ import { FaMoneyBillWave } from "react-icons/fa";
 import { AiFillFileText } from "react-icons/ai";
 import { SiMicrosoftexcel } from "react-icons/si";
 import { RiAccountPinBoxLine } from "react-icons/ri";
+import { FaFileInvoiceDollar } from 'react-icons/fa';
 import { BiSupport } from "react-icons/bi";
 import { FaBalanceScale } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -17,14 +18,14 @@ const ServicesData = [
   },
   {
     id: 2,
-    title: "Tally",
+    title: "Business Consulting",
     link: "#",
     icon: <RiAccountPinBoxLine />,
     delay: 0.3,
   },
   {
     id: 3,
-    title: "Excel",
+    title: "Book Keeping",
     link: "#",
     icon: <SiMicrosoftexcel />,
     delay: 0.4,
@@ -43,13 +44,13 @@ const ServicesData = [
     icon: <FaMoneyBillWave />,
     delay: 0.6,
   },
-  // {
-  //   id: 6,
-  //   title: "24/7 support",
-  //   link: "#",
-  //   icon: <BiSupport />,
-  //   delay: 0.7,
-  // },
+  {
+    id: 6,
+    title: "GCC VAT",
+    link: "#",
+    icon: <FaFileInvoiceDollar />,
+    delay: 0.7,
+  },
 ];
 
 const SlideLeft = (delay) => {
@@ -77,10 +78,9 @@ const Services = () => {
           Services We Provide
         </h1>
         <p className="text-center pb-10 font-semibold text-slate-500">
-          Enroll in 3-Month Offline Programs at Our Centers <br /> for Hands-On
-          Learning and Skill Development.
+        We deliver comprehensive tax solutions<br />for all your financial needs.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
           {ServicesData.map((service) => (
             <motion.div
               variants={SlideLeft(service.delay)}
